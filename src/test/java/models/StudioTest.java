@@ -29,8 +29,8 @@ public class StudioTest {
         cast.add(actor);
         studio = new Studio("MirrorMax", 0);
         studio2 = new Studio("Mangle Entertainment", 0);
-        film1 = new Film("The day after the day it rained hammers", director, "disaster", studio);
-        film2 = new Film("TekWars reboot", director, "disaster", studio);
+        film1 = new Film("The day after the day it rained hammers", director, Genre.COMEDY, studio);
+        film2 = new Film("TekWars reboot", director, Genre.COMEDY, studio);
         films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);

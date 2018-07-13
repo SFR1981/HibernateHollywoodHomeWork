@@ -27,9 +27,9 @@ public class ActorTest {
         cast = new ArrayList<Actor>();
         cast.add(actor);
         studio = new Studio("MirrorMax", 999999);
-        film1 = new Film("The day after the day it rained hammers", director,  "disaster", studio);
-        film2 = new Film("TekWars reboot", director, "disaster", studio);
-        film3 = new Film("Shrok 4", director,"comedy", studio);
+        film1 = new Film("The day after the day it rained hammers", director,  Genre.DISASTER, studio);
+        film2 = new Film("TekWars reboot", director, Genre.SCIENCE_FICTION, studio);
+        film3 = new Film("Shrok 4", director, Genre.HORROR, studio);
         films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);

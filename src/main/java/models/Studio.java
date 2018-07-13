@@ -2,6 +2,7 @@ package models;
 
 
 import db.DBHelper;
+import db.DBStudio;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -55,7 +56,7 @@ public class Studio {
         this.bank = bank;
     }
 
-    @OneToMany(mappedBy = "studio", fetch =  FetchType.LAZY)
+    @OneToMany(mappedBy = "studio", fetch =  FetchType.EAGER)
     public List<Film> getFilms() {
         return films;
     }
@@ -66,6 +67,8 @@ public class Studio {
 
     public void addFilmToFilms(Film film){
         this.films.add(film);
+        DBHelper.update(this);
+        this.payPayFilmCrew(film);
     }
 
     public void loseMoney(int pay){
@@ -80,6 +83,9 @@ public class Studio {
         DBHelper.update(this);
 
     }
+
+    //pay all payrolls for all movies belonging to studio
+
 
 
     public String getName() {

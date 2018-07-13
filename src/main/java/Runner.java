@@ -1,10 +1,9 @@
 import db.DBHelper;
-import models.Actor;
-import models.Director;
-import models.Film;
-import models.Studio;
+import db.DBStudio;
+import models.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Runner {
 
@@ -30,23 +29,34 @@ public class Runner {
         ArrayList<Actor> cast = new ArrayList<Actor>();
         cast.add(actor);
 
-       Film film1 = new Film("The day after the day it rained hammers", director, "disaster", studio);
+       Film film1 = new Film("The day after the day it rained hammers", director, Genre.DISASTER, studio);
         film1.setCast(cast);
         DBHelper.save(film1);
 
-        Film film2 = new Film("TekWars reboot", director2, "disaster", studio2);
+        Film film2 = new Film("TekWars reboot", director2, Genre.SCIENCE_FICTION, studio2);
         film2.setCast(cast);
         DBHelper.save(film2);
+
+        Film film3 = new Film ("Shrok 4", director, Genre.COMEDY, studio);
+        film1.setCast(cast);
+        DBHelper.save(film1);
 
         ArrayList<Film> films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);
 
-        studio.setFilms(films);
-        studio2.payPayFilmCrew(film2);
-        studio.payPayFilmCrew(film1);
-        studio.payPayFilmCrew(film1);
+        studio.addFilmToFilms(film1);
+        studio2.addFilmToFilms(film2);
+        studio.addFilmToFilms(film1);
+        studio2.addFilmToFilms(film2);
+        studio.addFilmToFilms(film1);
+        studio2.addFilmToFilms(film2);
+        studio.addFilmToFilms(film1);
+        studio2.addFilmToFilms(film2);
 
+
+
+        List<Film> foundFilms = DBStudio.getFilmsFromStudio(studio);
 
 
 

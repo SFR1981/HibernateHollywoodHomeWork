@@ -15,7 +15,7 @@ public class Film {
     private String title;
     private Director director;
     private List<Actor> cast;
-    private String genre;
+    private Genre genre;
     private Studio studio;
 
 
@@ -24,7 +24,7 @@ public class Film {
     }
 
 
-    public Film(String title, Director director, String genre, Studio studio) {
+    public Film(String title, Director director, Genre genre, Studio studio) {
         this.title = title;
         this.director = director;
         this.cast = new ArrayList<Actor>();
@@ -81,11 +81,11 @@ public class Film {
     }
 
     @Column(name = "genre")
-    public String getGenre() {
+    public Genre getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(Genre genre) {
         this.genre = genre;
     }
 

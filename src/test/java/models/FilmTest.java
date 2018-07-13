@@ -29,8 +29,8 @@ public class FilmTest {
         cast.add(actor);
         studio = new Studio("MirrorMax", 999999);
         studio2 = new Studio("Mangle Entertainment", 999999);
-        film1 = new Film("The day after the day it rained hammers", director, "disaster", studio);
-        film2 = new Film("TekWars reboot", director, "disaster", studio);
+        film1 = new Film("The day after the day it rained hammers", director, Genre.DISASTER, studio);
+        film2 = new Film("TekWars reboot", director, Genre.SCIENCE_FICTION, studio);
         films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);
@@ -71,13 +71,13 @@ public class FilmTest {
 
     @Test
     public void getGenre() {
-        assertEquals("disaster", film1.getGenre());
+        assertEquals(Genre.DISASTER, film1.getGenre());
     }
 
     @Test
     public void setGenre() {
-        film1.setGenre("Horror");
-        assertEquals("Horror", film1.getGenre());
+        film1.setGenre(Genre.HORROR);
+        assertEquals(Genre.HORROR, film1.getGenre());
     }
 
     @Test
