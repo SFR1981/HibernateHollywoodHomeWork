@@ -19,7 +19,7 @@ public class Actor extends Employee{
 
     @Cascade(CascadeType.SAVE_UPDATE)
     @ManyToMany
-    @JoinTable(name = "actors_films", joinColumns  = {@JoinColumn(name = "film_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "actor_id", nullable = false, updatable = false)})
+    @JoinTable(name = "actors_films", joinColumns  = {@JoinColumn(name = "actor_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "film_id", nullable = false, updatable = false)})
     public List<Film> getFilms() {
         return films;
     }

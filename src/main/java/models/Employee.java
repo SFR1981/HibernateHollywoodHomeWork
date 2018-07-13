@@ -1,6 +1,8 @@
 package models;
 
 
+import db.DBHelper;
+
 import javax.persistence.*;
 
 @Entity
@@ -68,6 +70,7 @@ public abstract class Employee {
     public void isPaid(int pay) {
         pay = this.payRate;
         this.bank += pay;
+        DBHelper.update(this);
         // studio budget down - save both to db
         // test later on during extension
     }
