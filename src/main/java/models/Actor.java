@@ -15,6 +15,10 @@ public class Actor extends Employee{
 
     private List<Film> films;
 
+    public Actor(){
+
+    }
+
     public Actor(String name, int payRate) {
         super(name, payRate);
         this.films = new ArrayList<Film>();

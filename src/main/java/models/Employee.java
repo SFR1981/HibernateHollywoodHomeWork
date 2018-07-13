@@ -70,9 +70,8 @@ public abstract class Employee {
     public void isPaid() {
         int pay = this.payRate;
         this.bank += pay;
-      //  DBHelper.update(this);
-        // studio budget down - save both to db
-        // test later on during extension
+
+
     }
 
     public void payRateIncrease(int increase) {

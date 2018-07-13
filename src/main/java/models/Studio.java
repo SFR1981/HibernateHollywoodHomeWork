@@ -17,7 +17,7 @@ public class Studio {
     private int bank;
     private List<Film> films;
 
-    public Studio(){
+    public Studio() {
 
     }
 
@@ -40,7 +40,10 @@ public class Studio {
     }
 
 
-
+    @Column(name = "name")
+    public String getName() {
+        return name;
+    }
 
 
     public void setName(String name) {
@@ -56,7 +59,7 @@ public class Studio {
         this.bank = bank;
     }
 
-    @OneToMany(mappedBy = "studio", fetch =  FetchType.EAGER)
+    @OneToMany(mappedBy = "studio", fetch = FetchType.EAGER)
     public List<Film> getFilms() {
         return films;
     }
@@ -65,18 +68,18 @@ public class Studio {
         this.films = films;
     }
 
-    public void addFilmToFilms(Film film){
+    public void addFilmToFilms(Film film) {
         this.films.add(film);
         DBHelper.update(this);
         this.payPayFilmCrew(film);
     }
 
-    public void loseMoney(int pay){
+    public void loseMoney(int pay) {
         this.bank -= pay;
     }
 
-//    // pay everyone
-   public void payPayFilmCrew(Film film){
+    //    // pay everyone
+    public void payPayFilmCrew(Film film) {
         film.payAll();
         int cost = film.payroll();
         this.loseMoney(cost);
@@ -87,8 +90,4 @@ public class Studio {
     //pay all payrolls for all movies belonging to studio
 
 
-
-    public String getName() {
-        return name;
-    }
 }
