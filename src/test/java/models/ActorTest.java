@@ -13,6 +13,7 @@ public class ActorTest {
     Actor actor;
     Film film1;
     Film film2;
+    Film film3;
     ArrayList<Film> films;
     List<Actor> cast;
     Studio studio;
@@ -26,8 +27,9 @@ public class ActorTest {
         cast = new ArrayList<Actor>();
         cast.add(actor);
         studio = new Studio("MirrorMax", 999999);
-        film1 = new Film("The day after the day it rained hammers", director, cast, "disaster", studio);
-        film2 = new Film("TekWars reboot", director, cast, "disaster", studio);
+        film1 = new Film("The day after the day it rained hammers", director,  "disaster", studio);
+        film2 = new Film("TekWars reboot", director, "disaster", studio);
+        film3 = new Film("Shrok 4", director,"comedy", studio);
         films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);
@@ -46,6 +48,12 @@ public class ActorTest {
         actor.setFilms(films);
         assertEquals(2, actor.getFilms().size());
 
+    }
+
+    @Test
+    public void canAddFilm(){
+        actor.addFilmtoFilms(film3);
+        assertEquals(1, actor.getFilms().size());
     }
 
     @Test

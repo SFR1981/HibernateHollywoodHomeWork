@@ -3,6 +3,7 @@ package models;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -22,10 +23,10 @@ public class Film {
     }
 
 
-    public Film(String title, Director director, List<Actor> cast, String genre, Studio studio) {
+    public Film(String title, Director director, String genre, Studio studio) {
         this.title = title;
         this.director = director;
-        this.cast = cast;
+        this.cast = new ArrayList<Actor>();
         this.genre = genre;
         this.studio = studio;
 
@@ -72,6 +73,10 @@ public class Film {
 
     public void setCast(List<Actor> cast) {
         this.cast = cast;
+    }
+
+    public void addCast(Actor actor){
+        this.cast.add(actor);
     }
 
     @Column(name = "genre")

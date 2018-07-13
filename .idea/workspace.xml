@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea68307-9178-4d11-b66a-f46cb8e5a117" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/models/FilmTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Actor.java" afterPath="$PROJECT_DIR$/src/main/java/models/Actor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/models/Employee.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Film.java" afterPath="$PROJECT_DIR$/src/main/java/models/Film.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/ActorTest.java" afterPath="$PROJECT_DIR$/src/test/java/models/ActorTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/DirectorTest.java" afterPath="$PROJECT_DIR$/src/test/java/models/DirectorTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Film.class" afterPath="$PROJECT_DIR$/target/classes/models/Film.class" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/models/ActorTest.class" afterPath="$PROJECT_DIR$/target/test-classes/models/ActorTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,20 +79,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActorTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/ActorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+            <state relative-caret-position="375">
+              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
               <folding>
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#1207#1208#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1410#1411#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
                 <element signature="e#1646#1647#0" expanded="true" />
-                <element signature="e#1697#1698#0" expanded="true" />
+                <element signature="e#1694#1695#0" expanded="true" />
+                <element signature="e#1849#1850#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,8 +101,8 @@
       <file leaf-file-name="Director.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Director.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="84">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#504#505#0" expanded="true" />
@@ -114,37 +116,77 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DirectorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/models/DirectorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="31" column="25" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="31" selection-end-column="25" />
+              <folding>
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
+                <element signature="e#1500#1501#0" expanded="true" />
+                <element signature="e#1551#1552#0" expanded="true" />
+                <element signature="e#1712#1713#0" expanded="true" />
+                <element signature="e#1768#1769#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Film.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Film.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="-214">
+              <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
                 <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
                 <element signature="e#892#893#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1180#1181#0" expanded="true" />
-                <element signature="e#1220#1221#0" expanded="true" />
-                <element signature="e#1578#1579#0" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1650#1651#0" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1742#1743#0" expanded="true" />
-                <element signature="e#1770#1771#0" expanded="true" />
-                <element signature="e#1812#1813#0" expanded="true" />
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1982#1983#0" expanded="true" />
-                <element signature="e#2011#2012#0" expanded="true" />
-                <element signature="e#2055#2056#0" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#996#997#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1606#1607#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1749#1750#0" expanded="true" />
+                <element signature="e#1785#1786#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1949#1950#0" expanded="true" />
+                <element signature="e#2085#2086#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#2158#2159#0" expanded="true" />
+                <element signature="e#2194#2195#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilmTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/models/FilmTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+              <folding>
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1125#1126#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1385#1386#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1800#1801#0" expanded="true" />
+                <element signature="e#1858#1859#0" expanded="true" />
+                <element signature="e#2029#2030#0" expanded="true" />
+                <element signature="e#2099#2100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +195,7 @@
       <file leaf-file-name="Studio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
+            <state relative-caret-position="937">
               <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -206,12 +248,14 @@
         <option value="$PROJECT_DIR$/src/main/java/db/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Film.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Director.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Studio.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Actor.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Employee.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/ActorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/DirectorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Film.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/FilmTest.java" />
       </list>
     </option>
   </component>
@@ -347,7 +391,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ActorTest.payRateIncrease">
+  <component name="RunManager" selected="JUnit.FilmTest.setStudio">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -369,7 +413,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="ActorTest.getPayRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmTest.getGenre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -380,8 +424,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ActorTest" />
-      <option name="METHOD_NAME" value="getPayRate" />
+      <option name="MAIN_CLASS_NAME" value="models.FilmTest" />
+      <option name="METHOD_NAME" value="getGenre" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -394,7 +438,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ActorTest.isPaid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmTest.getStudio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -405,8 +449,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ActorTest" />
-      <option name="METHOD_NAME" value="isPaid" />
+      <option name="MAIN_CLASS_NAME" value="models.FilmTest" />
+      <option name="METHOD_NAME" value="getStudio" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -419,7 +463,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ActorTest.payRateIncrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmTest.setCast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -430,8 +474,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ActorTest" />
-      <option name="METHOD_NAME" value="payRateIncrease" />
+      <option name="MAIN_CLASS_NAME" value="models.FilmTest" />
+      <option name="METHOD_NAME" value="setCast" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -444,7 +488,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ActorTest.setBank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmTest.setGenre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -455,8 +499,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ActorTest" />
-      <option name="METHOD_NAME" value="setBank" />
+      <option name="MAIN_CLASS_NAME" value="models.FilmTest" />
+      <option name="METHOD_NAME" value="setGenre" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -469,7 +513,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ActorTest.setPayRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilmTest.setStudio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -480,8 +524,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ActorTest" />
-      <option name="METHOD_NAME" value="setPayRate" />
+      <option name="MAIN_CLASS_NAME" value="models.FilmTest" />
+      <option name="METHOD_NAME" value="setStudio" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -555,19 +599,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ActorTest.setBank" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ActorTest.getPayRate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ActorTest.isPaid" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ActorTest.setPayRate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ActorTest.payRateIncrease" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FilmTest.setCast" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FilmTest.getGenre" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FilmTest.setGenre" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FilmTest.getStudio" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FilmTest.setStudio" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ActorTest.payRateIncrease" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ActorTest.isPaid" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ActorTest.setPayRate" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ActorTest.setBank" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ActorTest.getPayRate" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FilmTest.setStudio" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FilmTest.getStudio" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FilmTest.setGenre" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FilmTest.getGenre" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FilmTest.setCast" />
       </list>
     </recent_temporary>
   </component>
@@ -588,35 +632,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ActorTest_getBank - 2018.07.13 at 13h 00m 12s.xml">
-      <configuration name="ActorTest.getBank" configurationId="JUnit" />
+    <history-entry file="FilmTest_getCast - 2018.07.13 at 13h 51m 35s.xml">
+      <configuration name="FilmTest.getCast" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_getName - 2018.07.13 at 12h 59m 05s.xml">
-      <configuration name="ActorTest.getName" configurationId="JUnit" />
+    <history-entry file="FilmTest_getGenre - 2018.07.13 at 13h 52m 44s.xml">
+      <configuration name="FilmTest.getGenre" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_getPayRate - 2018.07.13 at 13h 00m 31s.xml">
-      <configuration name="ActorTest.getPayRate" configurationId="JUnit" />
+    <history-entry file="FilmTest_getStudio - 2018.07.13 at 13h 53m 42s.xml">
+      <configuration name="FilmTest.getStudio" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_isPaid - 2018.07.13 at 13h 01m 36s.xml">
-      <configuration name="ActorTest.isPaid" configurationId="JUnit" />
+    <history-entry file="FilmTest_getStudio - 2018.07.13 at 13h 53m 55s.xml">
+      <configuration name="FilmTest.getStudio" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_isPaid - 2018.07.13 at 13h 01m 46s.xml">
-      <configuration name="ActorTest.isPaid" configurationId="JUnit" />
+    <history-entry file="FilmTest_setCast - 2018.07.13 at 13h 52m 22s.xml">
+      <configuration name="FilmTest.setCast" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_isPaid - 2018.07.13 at 13h 02m 30s.xml">
-      <configuration name="ActorTest.isPaid" configurationId="JUnit" />
+    <history-entry file="FilmTest_setGenre - 2018.07.13 at 13h 53m 04s.xml">
+      <configuration name="FilmTest.setGenre" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_setBank - 2018.07.13 at 13h 00m 16s.xml">
-      <configuration name="ActorTest.setBank" configurationId="JUnit" />
+    <history-entry file="FilmTest_setStudio - 2018.07.13 at 13h 55m 25s.xml">
+      <configuration name="FilmTest.setStudio" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_setBank - 2018.07.13 at 13h 02m 24s.xml">
-      <configuration name="ActorTest.setBank" configurationId="JUnit" />
+    <history-entry file="FilmTest_setStudio - 2018.07.13 at 13h 56m 12s.xml">
+      <configuration name="FilmTest.setStudio" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_setName - 2018.07.13 at 12h 59m 40s.xml">
-      <configuration name="ActorTest.setName" configurationId="JUnit" />
+    <history-entry file="FilmTest_setStudio - 2018.07.13 at 13h 57m 12s.xml">
+      <configuration name="FilmTest.setStudio" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ActorTest_setPayRate - 2018.07.13 at 13h 02m 27s.xml">
-      <configuration name="ActorTest.setPayRate" configurationId="JUnit" />
+    <history-entry file="FilmTest_setStudio - 2018.07.13 at 13h 57m 23s.xml">
+      <configuration name="FilmTest.setStudio" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -656,7 +700,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -751,30 +795,32 @@
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
             <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
             <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,14 +866,14 @@
         <state relative-caret-position="450">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
             <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -872,89 +918,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Director.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="129" lean-forward="false" selection-start-line="9" selection-start-column="129" selection-end-line="9" selection-end-column="129" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Film.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,17 +988,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/ActorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        <state relative-caret-position="375">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
             <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Director.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/DirectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1551#1552#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Film.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-214">
+          <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/FilmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+          <folding>
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2099#2100#0" expanded="true" />
           </folding>
         </state>
       </provider>
