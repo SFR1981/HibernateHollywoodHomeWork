@@ -13,7 +13,7 @@ public class ActorTest {
     Actor actor;
     Film film1;
     Film film2;
-    List<Film> films;
+    ArrayList<Film> films;
     List<Actor> cast;
     Studio studio;
     Director director;
@@ -27,7 +27,7 @@ public class ActorTest {
         cast.add(actor);
         studio = new Studio("MirrorMax", 999999);
         film1 = new Film("The day after the day it rained hammers", director, cast, "disaster", studio);
-        film1 = new Film("TekWars reboot", director, cast, "disaster", studio);
+        film2 = new Film("TekWars reboot", director, cast, "disaster", studio);
         films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);
@@ -43,6 +43,8 @@ public class ActorTest {
 
     @Test
     public void setFilms() {
+        actor.setFilms(films);
+        assertEquals(2, actor.getFilms().size());
 
     }
 
@@ -56,33 +58,47 @@ public class ActorTest {
 
     @Test
     public void getName() {
+        assertEquals("Wall Smath", actor.getName());
     }
 
     @Test
     public void setName() {
+        actor.setName("Harry Noone");
+        assertEquals("Harry Noone", actor.getName());
+
     }
 
     @Test
     public void getBank() {
+        assertEquals(0, actor.getBank());
     }
 
     @Test
     public void setBank() {
+        actor.setBank(5);
+        assertEquals(5, actor.getBank());
     }
 
     @Test
     public void getPayRate() {
+        assertEquals(5, actor.getPayRate());
     }
 
     @Test
     public void setPayRate() {
+        actor.setPayRate(6);
+        assertEquals(6, actor.getPayRate());
     }
 
     @Test
     public void isPaid() {
+        actor.isPaid();
+        assertEquals(5, actor.getBank());
     }
 
     @Test
     public void payRateIncrease() {
+        actor.payRateIncrease(5);
+        assertEquals(10, actor.getPayRate());
     }
 }
