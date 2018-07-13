@@ -99,19 +99,40 @@ public class Film {
         this.studio = studio;
     }
 
-    //TODO: pay everyone void
-    // this.director.getpaid
-    // for castMember in cast
-    // cast.getpaid
 
 
 
     //TODO: calculate payroll for film,
     // everyone gets paid payrate and then total
     // director
+    public int getPayroll(){
+       int total = this.director.getPayRate();
+       for (Actor actor : this.cast){
+           total += actor.getPayRate();
+       }
+       return total;
+    }
+
     // total = 0
     // total += this.director.getpayrate
     // for actor in cast
     // total += actor.getpayrate
     // return total
+
+    // TODO: pay all
+    public void payAll(){
+        this.payCast();
+        this.payDirector(this.director);
+    }
+
+    public void payCast(){
+        for (Actor actor : this.cast){
+            actor.isPaid();
+        }
+    }
+    public void payDirector(Director director){
+        director.isPaid();
+    }
+
+
 }

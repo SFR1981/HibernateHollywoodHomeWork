@@ -66,4 +66,20 @@ public class Studio {
     public void addFilmToFilms(Film film){
         this.films.add(film);
     }
+
+    public void loseMoney(int pay){
+        this.bank -= pay;
+    }
+
+//    //TODO: pay everyone void
+//    public void payPayFilmCrew(Film film){
+//        film.payAll();
+//        film.
+//    }
+
+    // public void payPayrollForFilm(Film film)
+    // film.payPayroll
+    // bank - payroll
+
+
 }

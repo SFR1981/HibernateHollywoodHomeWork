@@ -91,4 +91,39 @@ public class FilmTest {
         assertEquals("Mangle Entertainment", film1.getStudio().getName());
 
     }
+
+    @Test
+    public void canPayDirector(){
+        film1.payDirector(director);
+        assertEquals(100, director.getBank());
+    }
+
+    @Test
+    public void canPayCast(){
+        film1.setCast(cast);
+        film1.payCast();
+        assertEquals(5, actor.getBank());
+    }
+
+    @Test
+    public void canPayAll(){
+        film1.setCast(cast);
+        film1.payAll();
+        assertEquals(100, director.getBank());
+        assertEquals(5, actor.getBank());
+
+    }
+
+    @Test
+    public void canGetPayRoll(){
+        film1.setCast(cast);
+        assertEquals(105, film1.getPayroll());
+    }
+
+    @Test
+    public void canAddCast(){
+        film1.addCast(actor);
+        assertEquals(1, film1.getCast().size());
+
+    }
 }
