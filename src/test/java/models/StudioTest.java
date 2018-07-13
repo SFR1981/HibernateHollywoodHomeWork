@@ -82,4 +82,14 @@ public class StudioTest {
         assertEquals(9, studio.getBank());
 
     }
+
+    @Test
+    public void studioPaysOut(){
+        film1.addCast(actor);
+        studio.setBank(205);
+        studio.payPayFilmCrew(film1);
+        assertEquals(100, film1.getDirector().getBank());
+        assertEquals(5, actor.getBank());
+        assertEquals(100, studio.getBank());
+    }
 }

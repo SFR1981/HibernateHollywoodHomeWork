@@ -72,10 +72,11 @@ public class Studio {
     }
 
 //    //TODO: pay everyone void
-//    public void payPayFilmCrew(Film film){
-//        film.payAll();
-//        film.
-//    }
+   public void payPayFilmCrew(Film film){
+        film.payAll();
+        int cost = film.getPayroll();
+        this.loseMoney(cost);
+    }
 
     // public void payPayrollForFilm(Film film)
     // film.payPayroll
