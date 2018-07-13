@@ -3,6 +3,7 @@ package models;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -17,9 +18,9 @@ public class Director extends Employee{
     }
 
 
-    public Director(String name, int payRate, List<Film> films) {
+    public Director(String name, int payRate) {
         super(name, payRate);
-        this.films = films;
+        this.films = new ArrayList<Film>();
     }
 
     @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
@@ -29,5 +30,9 @@ public class Director extends Employee{
 
     public void setFilms(List<Film> films) {
         this.films = films;
+    }
+
+    public void addFilmtoFilms(Film film){
+        this.films.add(film);
     }
 }

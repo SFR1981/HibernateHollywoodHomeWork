@@ -2,6 +2,7 @@ package models;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,14 +19,15 @@ public class Studio {
     }
 
 
-    public Studio(String name, int bank, List<Film> films) {
+    public Studio(String name, int bank) {
         this.name = name;
         this.bank = bank;
-        this.films = films;
+        this.films = new ArrayList<Film>();
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -34,6 +36,7 @@ public class Studio {
         this.id = id;
     }
 
+        @Column(name = "id")
     public String getName() {
         return name;
     }
@@ -42,6 +45,7 @@ public class Studio {
         this.name = name;
     }
 
+    @Column(name = "bank")
     public int getBank() {
         return bank;
     }
@@ -50,11 +54,16 @@ public class Studio {
         this.bank = bank;
     }
 
+    @OneToMany(mappedBy = "studio", fetch =  FetchType.LAZY)
     public List<Film> getFilms() {
         return films;
     }
 
     public void setFilms(List<Film> films) {
         this.films = films;
+    }
+
+    public void addFilmToFilms(Film film){
+        this.films.add(film);
     }
 }

@@ -6,15 +6,16 @@ import org.hibernate.annotations.CascadeType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Actor extends Employee{
 
     private List<Film> films;
 
-    public Actor(String name, int payRate, List<Film> films) {
+    public Actor(String name, int payRate) {
         super(name, payRate);
-        films = films;
+        films = new ArrayList<Film>();
     }
 
     @Cascade(CascadeType.SAVE_UPDATE)
@@ -27,5 +28,9 @@ public class Actor extends Employee{
 
     public void setFilms(List<Film> films) {
         films = films;
+    }
+
+    public void addFilmtoFilms(Film film){
+        this.films.add(film);
     }
 }
