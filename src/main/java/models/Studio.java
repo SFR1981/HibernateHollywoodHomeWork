@@ -1,6 +1,8 @@
 package models;
 
 
+import db.DBHelper;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,10 +38,9 @@ public class Studio {
         this.id = id;
     }
 
-        @Column(name = "id")
-    public String getName() {
-        return name;
-    }
+
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -71,16 +72,17 @@ public class Studio {
         this.bank -= pay;
     }
 
-//    //TODO: pay everyone void
+//    // pay everyone
    public void payPayFilmCrew(Film film){
         film.payAll();
-        int cost = film.getPayroll();
+        int cost = film.payroll();
         this.loseMoney(cost);
+        DBHelper.update(this);
+
     }
 
-    // public void payPayrollForFilm(Film film)
-    // film.payPayroll
-    // bank - payroll
 
-
+    public String getName() {
+        return name;
+    }
 }

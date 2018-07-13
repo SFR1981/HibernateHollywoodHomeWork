@@ -117,7 +117,7 @@ public class FilmTest {
     @Test
     public void canGetPayRoll(){
         film1.setCast(cast);
-        assertEquals(105, film1.getPayroll());
+        assertEquals(105, film1.payroll());
     }
 
     @Test

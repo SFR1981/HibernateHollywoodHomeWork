@@ -1,5 +1,6 @@
 package models;
 
+import db.DBHelper;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
@@ -105,7 +106,7 @@ public class Film {
     //TODO: calculate payroll for film,
     // everyone gets paid payrate and then total
     // director
-    public int getPayroll(){
+    public int payroll(){
        int total = this.director.getPayRate();
        for (Actor actor : this.cast){
            total += actor.getPayRate();
@@ -128,10 +129,12 @@ public class Film {
     public void payCast(){
         for (Actor actor : this.cast){
             actor.isPaid();
+            DBHelper.update(actor);
         }
     }
     public void payDirector(Director director){
         director.isPaid();
+        DBHelper.update(director);
     }
 
 

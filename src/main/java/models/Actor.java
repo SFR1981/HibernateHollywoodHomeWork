@@ -3,13 +3,14 @@ package models;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Entity
+@Table(name = "actors")
 public class Actor extends Employee{
 
     private List<Film> films;
@@ -27,7 +28,7 @@ public class Actor extends Employee{
     }
 
 
-    public void setFilms(ArrayList<Film> films) {
+    public void setFilms(List<Film> films) {
         this.films = films;
     }
 
