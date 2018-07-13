@@ -84,6 +84,8 @@ public class Film {
     }
 
     //TODO : Many to one relation
+    @ManyToOne
+    @JoinColumn(name = "studio_id", nullable = false)
     public Studio getStudio() {
         return studio;
     }
@@ -91,4 +93,20 @@ public class Film {
     public void setStudio(Studio studio) {
         this.studio = studio;
     }
+
+    //TODO: pay everyone void
+    // this.director.getpaid
+    // for castMember in cast
+    // cast.getpaid
+
+
+
+    //TODO: calculate payroll for film,
+    // everyone gets paid payrate and then total
+    // director
+    // total = 0
+    // total += this.director.getpayrate
+    // for actor in cast
+    // total += actor.getpayrate
+    // return total
 }
