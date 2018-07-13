@@ -11,10 +11,11 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="connection.pool_size">1</property>
         <property name="show_sql">true</property>
-        <mapping class = "models.Employee"/>
-        <mapping class = "models.Manager"/>
-        <mapping class = "models.Administrator"/>
-        <mapping class = "models.Department"/>
+        <mapping class = "models.Person"/>
+        <mapping class = "models.Director"/>
+        <mapping class = "models.Actor"/>
+        <mapping class = "models.Studio"/>
+        <mapping class = "models.Film"/>
 
     </session-factory>
 </hibernate-configuration>
