@@ -79,7 +79,7 @@ public class Runner {
         List<Film> horrors = DBActor.getFilmsByGenre(actor, Genre.HORROR);
         Studio foundStudio = DBStudio.getStudioFromAFilm(film2);
         Studio findStudio = DBHelper.find(Studio.class , film2.getStudio().getId());
-
+        Director findDirector = DBFilm.getDirectorByFilm(film2);
 
 
 
