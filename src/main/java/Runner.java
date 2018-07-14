@@ -56,6 +56,7 @@ public class Runner {
         Film film3 = new Film ("Shrok 4", director, Genre.HORROR, studio);
         DBHelper.save(film3);
         DBFilm.addActor(actor, film3);
+        DBFilm.addActor(actor5, film3);
         ArrayList<Film> films = new ArrayList<Film>();
         films.add(film1);
         films.add(film2);
@@ -76,6 +77,8 @@ public class Runner {
 
         List<Film> actorFilms = DBActor.getFilmsByActor(actor);
         List<Film> horrors = DBActor.getFilmsByGenre(actor, Genre.HORROR);
+        Studio foundStudio = DBStudio.getStudioFromAFilm(film2);
+        Studio findStudio = DBHelper.find(Studio.class , film2.getStudio().getId());
 
 
 

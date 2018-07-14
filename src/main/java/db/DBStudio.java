@@ -35,7 +35,19 @@ public static List<Film> getFilmsFromStudio(Studio studio){
     return films;
     }
 
-
+    public static Studio getStudioFromAFilm(Film film) {
+    session = HibernateUtil.getSessionFactory().openSession();
+    Studio studio = null;
+    try{
+        Criteria cr = session.createCriteria(Studio.class);
+        cr.add(Restrictions.eq("id", film.getStudio().getId()));
+        studio = (Studio) cr.uniqueResult();
+    }catch (HibernateException e){
+        e.printStackTrace();
+    }finally {
+        session.close();
+    }return studio;
+    }
 
 
     //give a list of actors from a studio
