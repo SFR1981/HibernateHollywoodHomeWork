@@ -9,6 +9,8 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
+import java.util.List;
+
 public class DBFilm {
 
     private static Session session;
@@ -32,4 +34,21 @@ public class DBFilm {
             session.close();
         }return director;
     }
-}
+
+    public static List<Film> getFilmsFromDirector(Director director) {
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<Film> films = null;
+        try{
+            Criteria cr = session.createCriteria(Film.class);
+            cr.add(Restrictions.eq( "director", director));
+            films = cr.list();
+        }catch (HibernateException e){
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return films;
+    }
+
+    }
+

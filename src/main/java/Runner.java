@@ -74,6 +74,7 @@ public class Runner {
 
 
         List<Film> foundFilms = DBStudio.getFilmsFromStudio(studio);
+        List<Film> filmsByDirector = DBFilm.getFilmsFromDirector(director);
 
         List<Film> actorFilms = DBActor.getFilmsByActor(actor);
         List<Film> horrors = DBActor.getFilmsByGenre(actor, Genre.HORROR);
