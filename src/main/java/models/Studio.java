@@ -87,7 +87,6 @@ public class Studio {
 
     }
 
-    //pay all payrolls for all movies belonging to studio
 
 
 }
